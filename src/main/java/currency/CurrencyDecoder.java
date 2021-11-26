@@ -36,4 +36,12 @@ public class CurrencyDecoder {
         }
         return null;
     }
+
+    public Currency getCurrency(int currencyCode){
+        for(Currency c: currencies){
+            if(c.getNumericCode() == currencyCode)
+                return c;
+        }
+        return null;
+    }
 }
