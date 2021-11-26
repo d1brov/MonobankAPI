@@ -1,0 +1,179 @@
+﻿ADB Unit of Account,XUA,965
+Afghani,AFN,971
+Algerian Dinar,DZD,12
+Argentine Peso,ARS,32
+Armenian Dram,AMD,51
+Aruban Florin,AWG,533
+Australian Dollar,AUD,36
+Azerbaijan Manat,AZN,944
+Bahamian Dollar,BSD,44
+Bahraini Dinar,BHD,48
+Baht,THB,764
+Balboa,PAB,590
+Barbados Dollar,BBD,52
+Belarusian Ruble,BYN,933
+Belize Dollar,BZD,84
+Bermudian Dollar,BMD,60
+Bolívar Soberano,VES,928
+Boliviano,BOB,68
+Bond Markets Unit European Composite Unit (EURCO),XBA,955
+Bond Markets Unit European Monetary Unit (E.M.U.-6),XBB,956
+Bond Markets Unit European Unit of Account 17 (E.U.A.-17),XBD,958
+Bond Markets Unit European Unit of Account 9 (E.U.A.-9),XBC,957
+Brazilian Real,BRL,986
+Brunei Dollar,BND,96
+Bulgarian Lev,BGN,975
+Burundi Franc,BIF,108
+Cabo Verde Escudo,CVE,132
+Canadian Dollar,CAD,124
+Cayman Islands Dollar,KYD,136
+CFA Franc BCEAO,XOF,952
+CFA Franc BEAC,XAF,950
+CFP Franc,XPF,953
+Chilean Peso,CLP,152
+Codes specifically reserved for testing purposes,XTS,963
+Colombian Peso,COP,170
+Comorian Franc,KMF,174
+Congolese Franc,CDF,976
+Convertible Mark,BAM,977
+Cordoba Oro,NIO,558
+Costa Rican Colon,CRC,188
+Cuban Peso,CUP,192
+Czech Koruna,CZK,203
+Dalasi,GMD,270
+Danish Krone,DKK,208
+Denar,MKD,807
+Djibouti Franc,DJF,262
+Dobra,STN,930
+Dominican Peso,DOP,214
+Dong,VND,704
+East Caribbean Dollar,XCD,951
+Egyptian Pound,EGP,818
+El Salvador Colon,SVC,222
+Ethiopian Birr,ETB,230
+Euro,EUR,978
+Falkland Islands Pound,FKP,238
+Fiji Dollar,FJD,242
+Forint,HUF,348
+Ghana Cedi,GHS,936
+Gibraltar Pound,GIP,292
+Gold,XAU,959
+Gourde,HTG,332
+Guarani,PYG,600
+Guinean Franc,GNF,324
+Guyana Dollar,GYD,328
+Hong Kong Dollar,HKD,344
+Hryvnia,UAH,980
+Iceland Krona,ISK,352
+Indian Rupee,INR,356
+Iranian Rial,IRR,364
+Iraqi Dinar,IQD,368
+Jamaican Dollar,JMD,388
+Jordanian Dinar,JOD,400
+Kenyan Shilling,KES,404
+Kina,PGK,598
+Kuna,HRK,191
+Kuwaiti Dinar,KWD,414
+Kwanza,AOA,973
+Kyat,MMK,104
+Lao Kip,LAK,418
+Lari,GEL,981
+Lebanese Pound,LBP,422
+Lek,ALL,8
+Lempira,HNL,340
+Leone,SLL,694
+Liberian Dollar,LRD,430
+Libyan Dinar,LYD,434
+Lilangeni,SZL,748
+Loti,LSL,426
+Malagasy Ariary,MGA,969
+Malawi Kwacha,MWK,454
+Malaysian Ringgit,MYR,458
+Mauritius Rupee,MUR,480
+Mexican Peso,MXN,484
+Mexican Unidad de Inversion (UDI),MXV,979
+Moldovan Leu,MDL,498
+Moroccan Dirham,MAD,504
+Mozambique Metical,MZN,943
+Mvdol,BOV,984
+Naira,NGN,566
+Nakfa,ERN,232
+Namibia Dollar,NAD,516
+Nepalese Rupee,NPR,524
+Netherlands Antillean Guilder,ANG,532
+New Israeli Sheqel,ILS,376
+New Taiwan Dollar,TWD,901
+New Zealand Dollar,NZD,554
+Ngultrum,BTN,64
+North Korean Won,KPW,408
+Norwegian Krone,NOK,578
+Ouguiya,MRU,929
+Pa'anga,TOP,776
+Pakistan Rupee,PKR,586
+Palladium,XPD,964
+Pataca,MOP,446
+Peso Convertible,CUC,931
+Peso Uruguayo,UYU,858
+Philippine Peso,PHP,608
+Platinum,XPT,962
+Pound Sterling,GBP,826
+Pula,BWP,72
+Qatari Rial,QAR,634
+Quetzal,GTQ,320
+Rand,ZAR,710
+Rial Omani,OMR,512
+Riel,KHR,116
+Romanian Leu,RON,946
+Rufiyaa,MVR,462
+Rupiah,IDR,360
+Russian Ruble,RUB,643
+Rwanda Franc,RWF,646
+Saint Helena Pound,SHP,654
+Saudi Riyal,SAR,682
+SDR (Special Drawing Right),XDR,960
+Serbian Dinar,RSD,941
+Seychelles Rupee,SCR,690
+Silver,XAG,961
+Singapore Dollar,SGD,702
+Sol,PEN,604
+Solomon Islands Dollar,SBD,90
+Som,KGS,417
+Somali Shilling,SOS,706
+Somoni,TJS,972
+South Sudanese Pound,SSP,728
+Sri Lanka Rupee,LKR,144
+Sucre,XSU,994
+Sudanese Pound,SDG,938
+Surinam Dollar,SRD,968
+Swedish Krona,SEK,752
+Swiss Franc,CHF,756
+Syrian Pound,SYP,760
+Taka,BDT,50
+Tala,WST,882
+Tanzanian Shilling,TZS,834
+Tenge,KZT,398
+The codes assigned for transactions where no currency is involved,XXX,999
+Trinidad and Tobago Dollar,TTD,780
+Tugrik,MNT,496
+Tunisian Dinar,TND,788
+Turkish Lira,TRY,949
+Turkmenistan New Manat,TMT,934
+UAE Dirham,AED,784
+Uganda Shilling,UGX,800
+Unidad de Fomento,CLF,990
+Unidad de Valor Real,COU,970
+Unidad Previsional,UYW,927
+Uruguay Peso en Unidades Indexadas (UI),UYI,940
+US Dollar,USD,840
+US Dollar (Next day),USN,997
+Uzbekistan Sum,UZS,860
+Vatu,VUV,548
+WIR Euro,CHE,947
+WIR Franc,CHW,948
+Won,KRW,410
+Yemeni Rial,YER,886
+Yen,JPY,392
+Yuan Renminbi,CNY,156
+Zambian Kwacha,ZMW,967
+Zimbabwe Dollar,ZWL,932
+Zloty,PLN,985
