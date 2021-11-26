@@ -19,7 +19,6 @@ public class CurrencyDecoder {
         currencies = new ArrayList<>(currencyCodes.size());
         for(String[] s: currencyCodes){
             String currencyName = s[0];
-            System.out.println(currencyName);
             String alphabeticCode = s[1];
             int numericCode = Integer.parseInt(s[2]);
             Currency c = new Currency(currencyName, alphabeticCode, numericCode);
