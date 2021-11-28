@@ -1,21 +1,31 @@
 import constants.Monobank;
+import currency.CurrencyDecoder;
+import currency.CurrencyRecord;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import rest.RESTController;
-
 import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
 
 import com.opencsv.exceptions.CsvException;
-import currency.CurrencyDecoder;
-
-import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, CsvException {
 
+        String currencyCodesFilePath = "ISO4217.csv";
+        CurrencyDecoder currencyDecoder = new CurrencyDecoder(currencyCodesFilePath);
 
-        String header = RESTController.getJSONArray(Monobank.CURRENCY).toString();
-        System.out.println(header);
+        JSONArray jsonArray = RESTController.getJSONArray(new URL(Monobank.CURRENCY));
 
-        String currencyCodesFilePath = "C:\\Users\\NRD\\Desktop\\Hillel\\pets\\MonobankAPI\\src\\main\\java\\ISO4217.csv";
-        System.out.println(new CurrencyDecoder(currencyCodesFilePath).getAlphabeticCode(4111));
+        ArrayList<CurrencyRecord> currencyRecords = new ArrayList<>();
+        for(int i = 0; i < jsonArray.length(); i++){
+            CurrencyRecord currencyRecord = new CurrencyRecord(jsonArray.getJSONObject(i), currencyDecoder);
+            currencyRecords.add(currencyRecord);
+
+            System.out.println(currencyRecord.toString());
+        }
+
+        System.out.println();
     }
 }
