@@ -2,8 +2,25 @@ package entities;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
+
+/*
+{
+  "id": "3MSaMMtczs",
+  "name": "string",
+  "webHookUrl": "string",
+  "accounts": [
+    {
+      "id": "kKGVoZuHWzqVoZuH",
+      "balance": 10000000,
+      "creditLimit": 10000000,
+      "type": "black",
+      "currencyCode": 980,
+      "cashbackType": "UAH"
+    }
+  ]
+}
+*/
 
 public class Client {
     String id;

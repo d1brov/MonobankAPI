@@ -5,43 +5,37 @@ import com.opencsv.exceptions.CsvException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CurrencyDecoder {
 
-    private List<Currency> currencies;
+    private static Map<Integer, Currency> currencies;
 
     public CurrencyDecoder(String currencyCodesFilePath) throws IOException, CsvException {
         FileReader fileReader = new FileReader(currencyCodesFilePath);
         CSVReader csvReader = new CSVReader(fileReader);
         List<String[]> currencyCodes = csvReader.readAll();
 
-        currencies = new ArrayList<>(currencyCodes.size());
+        currencies = new HashMap<Integer, Currency>();
         for(String[] s: currencyCodes){
             String currencyName = s[0];
             String alphabeticCode = s[1];
             int numericCode = Integer.parseInt(s[2]);
             Currency c = new Currency(currencyName, alphabeticCode, numericCode);
-            currencies.add(c);
+            currencies.put(numericCode, c);
         }
 
         csvReader.close();
         fileReader.close();
     }
 
-    public String getAlphabeticCode(int currencyCode){
-        for(Currency c: currencies){
-            if(c.getNumericCode() == currencyCode)
-                return c.getAlphabeticCode();
-        }
-        return null;
+    public static String getAlphabeticCode(int currencyCode){
+        return currencies.get(currencyCode).getAlphabeticCode();
     }
 
-    public Currency getCurrency(int currencyCode){
-        for(Currency c: currencies){
-            if(c.getNumericCode() == currencyCode)
-                return c;
-        }
-        return null;
+    public static Currency getCurrency(int currencyCode){
+        return currencies.get(currencyCode);
     }
 }

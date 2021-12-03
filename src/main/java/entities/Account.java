@@ -30,7 +30,7 @@ public class Account {
         this.type = account.getString("type");
         this.balance = account.getInt("balance");
         this.creditLimit = account.getInt("creditLimit");
-        //this.currency = new CurrencyDecoder();
+        this.currency = CurrencyDecoder.getCurrency(account.getInt("currencyCode"));
         this.cashbackType = account.getString("cashbackType");
     }
 }
