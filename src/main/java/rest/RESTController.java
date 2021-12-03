@@ -24,16 +24,20 @@ public class RESTController {
     private static String getString(URI link){
         for(int i = 0; i < CONNECTION_TRIES; i++) {
             try {
+
                 HttpClient client = HttpClient.newHttpClient();
                 HttpRequest request = HttpRequest.newBuilder(link).build();
                 HttpResponse response = client.send(request, HttpResponse.BodyHandlers.ofString());
                 return response.body().toString();
+
             } catch (IOException | InterruptedException e) {
+
                 System.out.println("EXCEPTION: couldn't open stream. Reason: " + e.getMessage());
                 if (e.getMessage().contains("Server returned HTTP response code: 429"))
                     System.out.println("Too many requests.");
                 System.out.println("Reconnect [" + (i + 1) + "/" + CONNECTION_TRIES + "] in" + WAITING_TIME_SEC + " seconds...");
                 Delay.waitSeconds(WAITING_TIME_SEC);
+
             }
         }
         return null;
