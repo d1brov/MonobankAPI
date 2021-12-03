@@ -17,6 +17,7 @@ import org.json.JSONObject;
 
 public class Account {
     String id;
+    String iban;
     String type;
     int balance;
     int creditLimit;
@@ -25,9 +26,11 @@ public class Account {
 
     public Account(JSONObject account) {
         this.id = account.getString("id");
+        this.iban = account.getString("iban");
         this.type = account.getString("type");
         this.balance = account.getInt("balance");
         this.creditLimit = account.getInt("creditLimit");
         //this.currency = new CurrencyDecoder();
+        this.cashbackType = account.getString("cashbackType");
     }
 }
